@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Аўтаматызацыя і аптымізацыя Front-end распрацоўкі</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>Аўтаматызацыя і аптымізацыя</h2>
+					<h3>Front-end распрацоўкі</h3>
+					<ul>
+						<li>Агульная інфармацыя</li>
+						<li>Grunt vs Gulp</li>
+						<li>Yeoman</li>
+						<li>Angular + Polymer</li>
+					</ul>
+					<br>
+					<p>
+						<small>by <a href="mailto:rootical.web@gmail.com">Vadzim Yakushau</a></small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Агульная інфармацыя</h2>
+						<blockquote>
+							<small>"You can’t identify a code craftsman by whether or not they use this framework or that language. You can identify them by how they decide which framework or language to use, or not use, in a given situation." by Eric Meyer</small>
+						</blockquote>
+
+						<ul>
+							<li>Прэпрацэсары
+								<ul>
+									<li>SASS</li>
+									<li>LESS</li>
+									<li>Coffeescript</li>
+								</ul>
+							</li>
+							<li>
+								Шабланізатары (JS)
+								<ul>
+									<li>Handlebars</li>
+									<li>Jade</li>
+									<li>_.template</li>
+								</ul>
+							</li>
+							<li>Прылады для жыцьця</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Як абраць шабланізатар?</h2>
+						<ul>
+						<li>Для кліента ці сервера?</li>
+							<li>Колькі ўбудаванай логікі?</li>
+							<li>Ці павінен быць найхутчэйшым?</li>
+							<li>Ці трэба прэкампіліраваць шаблоны?</li>
+							<li>DOM / String?</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Прылады для жыцьця</h2>
+						<ul>
+							<li>Photoshop
+								<ul>
+									<li>CSS Hat</li>
+									<li>Png Hat</li>
+								</ul>
+							</li>
+							<li>Siblime Text
+								<ul>
+									<li>Prefixr</li>
+									<li>Sidebar Enhancements</li>
+									<li>Emmet (ex Zen Coding)</li>
+									<li>Alignment</li>
+									<li>DocBlockr</li>
+								</ul>
+							</li>
+							<li>Іншае
+								<ul>
+									<li>Bower</li>
+									<li>“Oh My ZSH!” <a href="http://ohmyz.sh/">http://ohmyz.sh/</a></li>
+									<li>AngularJS Batarang (Chrome)</li>
+									<li>Perfect Pixel (Chrome)</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Вайна білдоў: Grunt vs Gulp</h2>
+						<img class="bg" width="600px" src="http://markdalgleish.github.io/presentation-build-wars-gulp-vs-grunt/images/gif/fight.gif" alt="">
+					</section>
+					<section>
+						<h2>Grunt плагіны</h2>
+						<img width="600px" src="http://markdalgleish.github.io/presentation-build-wars-gulp-vs-grunt/images/gif/bubbles.gif" alt="" class="bg">
+					</section>
+					<section>
+						<h3>GRUNT since 0.4</h3>
+						<h3>+</h3>
+						<h3>BOWER</h3>
+						<h3>+</h3>
+						<h3>YEOMAN</h3>
+						<h3>=</h3>
+						<h3><strong>Profit!</strong></h3>
+					</section>
+					<section>
+						<h2>A challenge appears</h2>
+						<img src="http://media.giphy.com/media/oM1B7VLVYmElq/giphy.gif" alt="" class="bg" width="600px">
+					</section>
+					<section>
+						<h2>Gulp.js</h2>
+						<img src="http://magdielcordero.info/archivos/img/gulpjs-vrs-gruntjs.png" alt="" class="bg" width="300px">
+					</section>
+					<section>
+						<h2>Пара словаў</h2>
+						<ul>
+							<li>Маленькія node.js модулі</li>
+							<li>Патокавая сістэма білдаваньня</li>
+							<li>Простае і элегантнае API</li>
+						</ul>
+					</section>
+					<section>
+						<h1>Так у чым розніца?</h1>
+						<br>
+						<h3>Канфігурацыя vs код</h3>
+					</section>
+					<section>
+						<h2>А сур'ёзна?</h2>
+						<h4>Grunt workflow (пішам часовыя файлы)</h4>
+						<img width="600px" src="http://jaysoo.ca/images/grunt-flow-2.png" alt="">
+						<h4>Gulp workflow (захоўваем усё ў памяці)</h4>
+						<img width="600px" src="http://jaysoo.ca/images/gulp-flow.png" alt="">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Yeoman</h2>
+						<p>
+							Сучасны працэс распрацоўкі для сучасных пралыдаў.
+							<img width="500px" src="http://matthewlehner.net/wp-content/uploads/2013/07/yeoman_ember_generator_options.png" alt="">
+						</p>
+						<h3>Ключавыя кампаненты</h3>
+						<ul>
+							<li>Yo</li>
+							<li>Bower</li>
+							<li>Grunt/Gulp</li>
+						</ul>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+						## Якія ёсьць генератары?
+						```
+							Angular, Backbone, Ember і больш за 800+ іншых
+						```
+						<br>
+						## Устлёўка ў 1 радок
+
+						```
+							npm install -g yo
+						```
+						</script>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Вэб кампаненты?</h2>
+						<h4>
+							4 асноўных модуля:
+						</h4>
+						<ul>
+							<li>Шаблоны (templates)</li>
+							<li>Дэкаратары (decorators)</li>
+							<li>Карыстальніцкія элементы (custom elements)</li>
+							<li>Прывідны DOM (shadow DOM)</li>
+						</ul>
+						<h4>
+							Дазваляюць:
+						</h4>
+						<ul>
+							<li>Ствараць віджэты,</li>
+							<li>реюзабельныя віджэты,</li>
+							<li>якія нічога не зламаюць, пры зьменах у рэалізацыі кампанента</li>
+						</ul>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+						## Дзесьці мы ўжо гэта бачылі..
+
+						```
+							<google-map lat="37.790" long="-122.390"></google-map>
+						```
+						</script>
+					</section>
+				</section>
+
+				<section>
+					<h2>Polymer</h2>
+					<p>
+						<img src="http://www.polymer-project.org/images/logos/p-logo.svg" alt="">
+					</p>
+					<p><a href="http://www.polymer-project.org/">Polymer Project</a></p>
+					<p>
+						<a href="http://www.polymer-project.org/tools/designer/">Polymer Designer</a>
+					</p>
+				</section>
+
+				<section>
+						<section data-markdown>
+							<script type="text/template">
+							## Выкарыстаўваем Angular разам з Polymer і Yeoman
+
+							```
+								npm install -g generator-ng-poly // усталёўваем модуль генератара
+								yo ng-poly // выконваем каманду генератара
+								gulp // білдзім
+							```
+							</script>
+						</section>
+						<section data-markdown>
+							<script type="text/template">
+								## Атрымліваем:
+								```
+									root/
+									├── app/
+									│   ├── home/
+									│   │   ├── home.js
+									│   │   ├── home.less
+									│   │   ├── home.tpl.{html,jade}
+									│   │   ├── home-controller.js
+									│   │   └── home-controller_test.{coffee,js}
+									│   ├── app.js
+									│   └── index.{html,jade}
+									├── bower_components/
+									├── e2e/
+									│   └── home/
+									│       ├── home.po.{coffee,js}
+									│       └── home_test.{coffee,js}
+									├── node_modules/
+									├── .editorconfig
+									├── .jshintrc
+									├── .yo-rc.json
+									├── bower.json
+									├── Gulpfile.js
+									├── karma.config.json
+									├── package.json
+									└── protractor.config.js
+								```
+							</script>
+						</section>
+						<section>
+							<h6>Даступныя генератары</h2>
+							<ul class="task-list">
+								<li>AngularJS
+
+									<ul class="task-list">
+									<li>
+									<a href="#app">ng-poly</a> (aka <a href="#app">ng-poly:app</a>)</li>
+									<li><a href="#constant">ng-poly:constant</a></li>
+									<li><a href="#controller">ng-poly:controller</a></li>
+									<li><a href="#directive">ng-poly:directive</a></li>
+									<li><a href="#factory">ng-poly:factory</a></li>
+									<li><a href="#filter">ng-poly:filter</a></li>
+									<li><a href="#module">ng-poly:module</a></li>
+									<li><a href="#provider">ng-poly:provider</a></li>
+									<li><a href="#route">ng-poly:route</a></li>
+									<li><a href="#service">ng-poly:service</a></li>
+									<li><a href="#value">ng-poly:value</a></li>
+									<li><a href="#view">ng-poly:view</a></li>
+									</ul>
+								</li>
+								<li>Polymer
+									<ul class="task-list">
+									<li><a href="#element">ng-poly:element</a></li>
+									</ul>
+								</li>
+							</ul>
+
+						</section>
+
+				</section>
+
+				<section>
+					<h1>Канец</h1>
+					<p><img src="http://media.giphy.com/media/7en60xUwV9DaM/giphy.gif" alt=""></p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
